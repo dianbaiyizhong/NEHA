@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts2配置文件，仅用于通用配置 -->
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.objectFactory.spring.useClassCache" value="true" />
+	<constant name="struts.objectFactory.spring.autoWire" value="name" />
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.custom.i18n.resources" value="hhm/neha/i18n/messages"></constant>
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<constant name="struts.enable.SlashesInActionNames" value="false"></constant>
+	<constant name="struts.multipart.maxSize" value="1073741824" />
+	<constant name="struts.devMode" value="true">constant</constant>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+
+	<package name="indexdefault" extends="struts-default">
+		<interceptors>
+			<interceptor name="identityInterceptor" class="hhm.neha.web.interceptor.IdentityInterceptor"></interceptor>
+			<interceptor-stack name="indexStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="identityInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="indexStack"></default-interceptor-ref>
+		<global-results>
+			<result name="identityFail" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="namespace">/login</param>
+			</result>
+		</global-results>
+	</package>
+	
+	<package name="operatedefault" extends="struts-default">
+		<interceptors>
+			<interceptor name="identityInterceptor" class="hhm.neha.web.interceptor.IdentityInterceptor"></interceptor>
+			<interceptor-stack name="operateStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="identityInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="operateStack"></default-interceptor-ref>
+		<global-results>
+			<result name="identityFail" type="redirectAction">
+				<param name="actionName">timeout</param>
+				<param name="namespace">/login</param>
+			</result>
+			<result name="AJAXSUCCESS" type="redirectAction">
+				<param name="actionName">ajaxDoneSuccess</param>
+				<param name="namespace">/ajax</param>
+				<param name="message">${message}</param>
+				<param name="navTabId">${navTabId}</param>
+				<param name="rel">${rel}</param>
+				<param name="forwardUrl">${forwardUrl}</param>
+				<param name="callbackType">${callbackType}</param>
+			</result>
+			<result name="AJAXERROR" type="redirectAction">
+				<param name="actionName">ajaxDoneError</param>
+				<param name="namespace">/ajax</param>
+				<param name="message">${message}</param>
+				<param name="navTabId">${navTabId}</param>
+				<param name="rel">${rel}</param>
+				<param name="forwardUrl">${forwardUrl}</param>
+				<param name="callbackType">${callbackType}</param>
+			</result>
+		</global-results>
+	</package>
+</struts>    

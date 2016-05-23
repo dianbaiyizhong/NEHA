@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-lazy-init="true" default-autowire="byName">
+
+	<!-- DAO -->
+	<bean id="categoryEventDao" class="hhm.neha.data.dao.impl.CategoryEventDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categoryAreaDao" class="hhm.neha.data.dao.impl.CategoryAreaDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categorySiteOneDao" class="hhm.neha.data.dao.impl.CategorySiteOneDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categorySiteTwoDao" class="hhm.neha.data.dao.impl.CategorySiteTwoDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="configWarningLineDao" class="hhm.neha.data.dao.impl.ConfigWarningLineDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventListDao" class="hhm.neha.data.dao.impl.EventListDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointEventIntensityDao" class="hhm.neha.data.dao.impl.PointEventIntensityDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleDailyDao" class="hhm.neha.data.dao.impl.PointMultipleDailyDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleHourlyDao" class="hhm.neha.data.dao.impl.PointMultipleHourlyDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleRealTimeDao" class="hhm.neha.data.dao.impl.PointMultipleRealTimeDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="securityAuthorizeDao" class="hhm.neha.data.dao.impl.SecurityAuthorizeDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="systemVersionDao" class="hhm.neha.data.dao.impl.SystemVersionDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="contentDao" class="hhm.neha.data.dao.impl.ContentDaoImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+
+
+	<!-- Service -->
+	<bean id="categoryAreaService" class="hhm.neha.service.impl.CategoryAreaServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categoryEventService" class="hhm.neha.service.impl.CategoryEventServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categorySiteOneService" class="hhm.neha.service.impl.CategorySiteOneServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categorySiteTwoService" class="hhm.neha.service.impl.CategorySiteTwoServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="configWarningLineService" class="hhm.neha.service.impl.ConfigWarningLineServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventListService" class="hhm.neha.service.impl.EventListServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointEventIntensityService" class="hhm.neha.service.impl.PointEventIntensityServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleDailyService" class="hhm.neha.service.impl.PointMultipleDailyServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleHourlyService" class="hhm.neha.service.impl.PointMultipleHourlyServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="pointMultipleRealTimeService" class="hhm.neha.service.impl.PointMultipleRealTimeServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="securityAuthorizeService" class="hhm.neha.service.impl.SecurityAuthorizeServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="systemVersionService" class="hhm.neha.service.impl.SystemVersionServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	
+	<bean id="contentService" class="hhm.neha.service.impl.ContentServiceImpl"
+		abstract="false" lazy-init="default" autowire="default"></bean>
+	
+	<!-- Action -->
+</beans>
+

@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+
+.main_notice {
+	list-style-position: outside;
+	list-style-type: square;
+	margin-left: 10px;
+}
+
+.main_notice_date {
+	margin-left: 10px;
+}
+
+.main_user_face {
+	height: 100px;
+	float: left;
+	width: 110px;
+	margin: 10px 15px;
+}
+
+.main_user_face_img {
+	border-color: #0066cc;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.main_user_info {
+	height: 100px;
+	float: left;
+	width: 300px;
+	margin: 10px 15px;
+}
+
+.main_user_info li {
+	margin: 10px 15px;
+}
+
+.main_user_info_d {
+	margin-left: 8px;
+}
+
+.main_user_info_d a {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #990000;
+}
+
+.main_user_word_t {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.main_user_word ul li {
+	float: left;
+	list-style: none;
+	display: block;
+	white-space: nowrap;
+	margin: 10px 15px;
+	border:1px solid #B8D0D6;
+	padding:5px;
+}
+
+.main_user_word ul li span a {
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #990000;
+}
+
+.main_user_event_t {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.main_user_event ul li {
+	float: left;
+	list-style: none;
+	display: block;
+	white-space: nowrap;
+	margin: 5px 15px;
+	border:1px solid #B8D0D6;
+	padding:5px;
+}
+
+.main_user_event ul li span a {
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #990000;
+}
+
+.onlined_ajax_title {
+	margin-left: 10px;
+	color: red;
+	font-size: 18px;
+}
+
+.onlined_ajax_m {
+	margin-left: 10px;
+	float: left;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+
+.onlined_ajax_m a {
+	color: #800000;
+}
+
+.onlined_ajax_c li {
+	margin-left: 20px; float：left;
+	list-style-type: circle;
+	line-height: 20px;
+	width: 400px;
+}
+
+a.define_lookup {
+	background: url(../images/s_buttons.gif) no-repeat;
+	width: 22px;
+	height: 20px;
+	overflow: hidden;
+	margin-right: 3px;
+	background-position: -161px 0;
+	text-decoration: none;
+}
+
+.group_tree {
+	float: left;
+	display: block;
+	margin: 10px;
+	overflow: auto;
+	width: 350px;
+	height: 300px;
+	border: solid 1px #CCC;
+	line-height: 21px;
+	background: #FFF;
+}
+
+.sysinfo_notice_title {
+	font-size: 16px;
+	height: 30px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.sysinfo_notice_date {
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.alarm_info_unread {
+	color: blue;
+}

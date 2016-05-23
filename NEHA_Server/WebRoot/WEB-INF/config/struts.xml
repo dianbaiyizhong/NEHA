@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts2配置文件，仅用于通用配置 -->
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.objectFactory.spring.useClassCache" value="true" />
+	<constant name="struts.objectFactory.spring.autoWire" value="name" />
+	<constant name="struts.action.extension" value="json" />
+	<constant name="struts.custom.i18n.resources" value="com/qawaa/i18n/messages"></constant>
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<constant name="struts.enable.SlashesInActionNames" value="false"></constant>
+	<constant name="struts.multipart.maxSize" value="1073741824" />
+	<constant name="struts.devMode" value="true">constant</constant>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+	
+	<package name="token-default" extends="json-default">
+		<interceptors>
+			<interceptor name="requestInterceptor" class="hhm.neha.web.interceptor.RequestIntercaptor"></interceptor>
+			<interceptor name="tokenInterceptor" class="hhm.neha.web.interceptor.TokenInterceptor"></interceptor>
+			<interceptor-stack name="tokenStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="requestInterceptor"></interceptor-ref>
+				<interceptor-ref name="tokenInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="tokenStack"></default-interceptor-ref>
+		<global-results>
+			<result name="input" type="chain">
+				<param name="actionName">con_ecp</param>
+				<param name="namespace">/errors</param>
+			</result>
+			<result name="error" type="chain">
+				<param name="actionName">error</param>
+				<param name="namespace">/errors</param>
+			</result>
+			<result name="sql_exception" type="chain">
+				<param name="actionName">sql_ecp</param>
+				<param name="namespace">/errors</param>
+			</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="sql_exception" exception="java.sql.SQLException"></exception-mapping>
+			<exception-mapping result="sql_exception" exception="org.springframework.dao.DataAccessResourceFailureException"></exception-mapping>
+			<exception-mapping result="sql_exception" exception="org.hibernate.exception.JDBCConnectionException"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+</struts>    

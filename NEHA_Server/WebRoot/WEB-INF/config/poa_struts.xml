@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts2配置文件，用于Action等配置 -->
+<struts>
+	<!-- ==============================authorize================================== -->
+	<package name="authorize" extends="json-default" namespace="/authorize">
+		<action name="pass" class="hhm.neha.web.action.login.LoginAction">
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="actionName">error</param>
+				<param name="namespace">/errors</param>
+			</result>
+		</action>
+	</package>
+	<!-- ==============================version================================== -->
+	<package name="version" extends="json-default" namespace="/">
+		<action name="version" class="hhm.neha.web.action.system.VersionAction">
+			<result name="success" type="json">
+				<param name="includeProperties">version,description</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	<!-- ==============================error================================== -->
+	<package name="error" extends="json-default" namespace="/errors">
+		<action name="error" class="hhm.neha.web.action.error.ErrorAction">
+			<result name="success" type="json">
+			</result>
+		</action>
+	</package>
+	<package name="exception" extends="json-default" namespace="/errors">
+		<action name="sql_ecp" class="hhm.neha.web.action.exception.SQLExceptionAction">
+			<result name="error" type="redirectAction">
+				<param name="actionName">error</param>
+				<param name="namespace">/errors</param>
+			</result>
+		</action>
+		<action name="con_ecp" class="hhm.neha.web.action.exception.ConvertExceptionAction">
+			<result name="error" type="redirectAction">
+				<param name="actionName">error</param>
+				<param name="namespace">/errors</param>
+			</result>
+		</action>
+	</package>
+	<!-- ==============================event================================== -->
+	<package name="events" extends="token-default" namespace="/events">
+		<action name="recommend_timeline" class="hhm.neha.web.action.event.EventsRecommendTimeLineAction" method="timeline">
+			<result name="success" type="json">
+				<param name="includeProperties">events\[\d+\]\.creat_at,events\[\d+\]\.exp,events\[\d+\]\.id,events\[\d+\]\.title,events\[\d+\]\.top,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="public_timeline" class="hhm.neha.web.action.event.EventsPublicTimeLineAction" method="timeline">
+			<result name="success" type="json">
+				<param name="includeProperties">events\[\d+\]\.creat_at,events\[\d+\]\.exp,events\[\d+\]\.id,events\[\d+\]\.title,events\[\d+\]\.top,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="category_events" class="hhm.neha.web.action.event.EventCategoryAction" method="category">
+			<result name="success" type="json">
+				<param name="includeProperties">events\[\d+\]\.creat_at,events\[\d+\]\.exp,events\[\d+\]\.id,events\[\d+\]\.title,events\[\d+\]\.top,category\.id,category\.name,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	<!-- ==============================point================================== -->
+	<package name="point" extends="token-default" namespace="/point">
+		<action name="event_timeline" class="hhm.neha.web.action.point.MultipleRealTimePointAction" >
+			<result name="success" type="json">
+				<param name="includeProperties">p\.event_id,p\.point,p\.date,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="batch_timeline" class="hhm.neha.web.action.point.BatchMultipleRealTimePointAction" >
+			<result name="success" type="json">
+				<param name="includeProperties">points\[\d+\]\.event_id,points\[\d+\]\.point,points\[\d+\]\.date,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="event_points" class="hhm.neha.web.action.point.MultipleEventPointsAction" >
+			<result name="success" type="json">
+				<param name="includeProperties">points\[\d+\]\.id,points\[\d+\]\.point,points\[\d+\]\.date,event_id,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="hour_timeline" class="hhm.neha.web.action.point.HourMultiplePointsAction" method="timeline" >
+			<result name="success" type="json">
+				<param name="includeProperties">p\.event_id,p\.point,p\.date,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="hour_points" class="hhm.neha.web.action.point.HourMultiplePointsAction" method="batch" >
+			<result name="success" type="json">
+				<param name="includeProperties">points\[\d+\]\.id,points\[\d+\]\.point,points\[\d+\]\.date,event_id,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="daily_timeline" class="hhm.neha.web.action.point.DailyMultiplePointsAction" method="timeline" >
+			<result name="success" type="json">
+				<param name="includeProperties">p\.event_id,p\.point,p\.date,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="daily_points" class="hhm.neha.web.action.point.DailyMultiplePointsAction" method="batch" >
+			<result name="success" type="json">
+				<param name="includeProperties">points\[\d+\]\.id,points\[\d+\]\.point,points\[\d+\]\.date,event_id,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="intensity" class="hhm.neha.web.action.point.EventCommunicationIntensity" method="singleIntensity" >
+			<result name="success" type="json">
+				<param name="includeProperties">intensity,event_id,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	
+	<!-- ==============================search================================== -->
+	<package name="hot_rank" extends="token-default" namespace="/rank">
+		<action name="rank_today" class="hhm.neha.web.action.rank.HotRankDailyAction"  method="today" >
+			<result name="success" type="json">
+				<param name="includeProperties">hotEvents\[\d+\]\.title,hotEvents\[\d+\]\.point,hotEvents\[\d+\]\.datetime,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	
+	<!-- ==============================search================================== -->
+	<package name="search_suggest" extends="token-default" namespace="/search/suggest">
+		<action name="event" class="hhm.neha.web.action.search.EventsSearchAction" method="search">
+			<result name="success" type="json">
+				<param name="includeProperties">events\[\d+\]\.creat_at,events\[\d+\]\.exp,events\[\d+\]\.id,events\[\d+\]\.title,events\[\d+\]\.top,next,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	<!-- ==============================category================================== -->
+	<package name="category" extends="token-default" namespace="/category">
+		<action name="event" class="hhm.neha.web.action.category.EventCategoryAction">
+			<result name="success" type="json">
+				<param name="includeProperties">categories\[\d+\]\.id,categories\[\d+\]\.name,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="area" class="hhm.neha.web.action.category.AreaCategoryAction">
+			<result name="success" type="json">
+				<param name="includeProperties">areas\[\d+\]\.area_id,areas\[\d+\]\.area_name,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	<package name="category_site" extends="token-default" namespace="/category/site">
+		<action name="class1" class="hhm.neha.web.action.category.SiteCategoryOneAction">
+			<result name="success" type="json">
+				<param name="includeProperties">class1es\[\d+\]\.site_class1_id,class1es\[\d+\]\.site_class1_name,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+		<action name="class2" class="hhm.neha.web.action.category.SiteCategoryTwoAction">
+			<result name="success" type="json">
+				<param name="includeProperties">class2es\[\d+\]\.site_class2_id,class2es\[\d+\]\.site_class2_name,class2es\[\d+\]\.class1,class2es\[\d+\]\.class1.site_class1_id,class2es\[\d+\]\.class1.site_class1_name,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	<package name="category_warningline" extends="token-default" namespace="/category/warning">
+		<action name="lines" class="hhm.neha.web.action.category.WarningLineConfigAction">
+			<result name="success" type="json">
+				<param name="includeProperties">lines\[\d+\]\.id,lines\[\d+\]\.name,lines\[\d+\]\.point,total,time</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="content" extends="token-default" namespace="/content">
+		<action name="getContent" class="hhm.neha.web.action.content.ContentAction"
+			method="get">
+			<result name="success" type="json">
+				<param name="root">contentlist</param>
+			</result>
+		</action>
+	</package>
+</struts>    

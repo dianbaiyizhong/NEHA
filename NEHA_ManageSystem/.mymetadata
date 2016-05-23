@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="NEHA_ManageSystem"
+  id="myeclipse.1461722097270"
+  context-root="/NEHA_ManageSystem"
+  j2ee-spec="5.0"
+  archive="NEHA_ManageSystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

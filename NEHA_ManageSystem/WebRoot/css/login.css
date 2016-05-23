@@ -1,0 +1,766 @@
+@CHARSET "UTF-8";
+BODY {
+	FONT: 12px/1.5 "Microsoft Yahei", 微软雅黑, arial, 宋体, Arial Narrow, serif
+}
+HTML {
+	BACKGROUND: #f3f0eb; COLOR: #404040
+}
+LEGEND {
+	BACKGROUND: #f3f0eb; COLOR: #404040
+}
+BODY {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+CODE {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+BUTTON {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+TABLE {
+	BORDER-COLLAPSE: collapse; BORDER-SPACING: 0
+}
+FIELDSET {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+IMG {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+ADDRESS {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CAPTION {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CITE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CODE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+DFN {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+EM {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+STRONG {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+TH {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+VAR {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+TH {
+	TEXT-ALIGN: left
+}
+H1 {
+	FONT-SIZE: 100%
+}
+H2 {
+	FONT-SIZE: 100%
+}
+H3 {
+	FONT-SIZE: 100%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+H5 {
+	FONT-SIZE: 100%
+}
+H6 {
+	FONT-SIZE: 100%
+}
+H1 {
+	FONT-SIZE: 18px
+}
+H2 {
+	FONT-SIZE: 16px
+}
+H3 {
+	FONT-SIZE: 14px
+}
+Q:before {
+	CONTENT: ''
+}
+Q:after {
+	CONTENT: ''
+}
+ABBR {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; FONT-VARIANT: normal; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+ACRONYM {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; FONT-VARIANT: normal; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+SUP {
+	VERTICAL-ALIGN: text-top
+}
+SUB {
+	VERTICAL-ALIGN: text-bottom
+}
+INPUT {
+	FONT-SIZE: inherit; FONT-FAMILY: inherit; FONT-WEIGHT: inherit
+}
+BUTTON {
+	FONT-SIZE: inherit; FONT-FAMILY: inherit; FONT-WEIGHT: inherit
+}
+TEXTAREA {
+	FONT-SIZE: inherit; FONT-FAMILY: inherit; FONT-WEIGHT: inherit
+}
+SELECT {
+	FONT-SIZE: inherit; FONT-FAMILY: inherit; FONT-WEIGHT: inherit
+}
+INPUT {
+	
+}
+BUTTON {
+	
+}
+TEXTAREA {
+	
+}
+SELECT {
+	
+}
+SELECT {
+	FONT: 100% Tahoma, Helvetica, Arial, sans-serif
+}
+INPUT {
+	FONT: 100% Tahoma, Helvetica, Arial, sans-serif
+}
+BUTTON {
+	FONT: 100% Tahoma, Helvetica, Arial, sans-serif
+}
+TEXTAREA {
+	FONT: 100% Tahoma, Helvetica, Arial, sans-serif
+}
+TABLE {
+	FONT-SIZE: inherit
+}
+A {
+	TEXT-DECORATION: none; COLOR: #36c
+}
+A:hover {
+	TEXT-DECORATION: underline; COLOR: #f60
+}
+.long-btn {
+	CURSOR: pointer; FONT-SIZE: 12px; BORDER-TOP: medium none; HEIGHT: 25px; BORDER-RIGHT: medium none; WIDTH: 100px; BACKGROUND: url(../images/btn_bg.png) no-repeat 0px -300px; BORDER-BOTTOM: medium none; FONT-WEIGHT: bold; COLOR: #fff; TEXT-ALIGN: center; BORDER-LEFT: medium none; DISPLAY: inline-block; LINE-HEIGHT: 25px
+}
+A.long-btn:hover {
+	COLOR: #fff
+}
+.clearfix:after {
+	HEIGHT: 0px; CONTENT: '\0020'; CLEAR: both; DISPLAY: block
+}
+.clearfix {
+	ZOOM: 1
+}
+#footer {
+	HEIGHT: 50px; COLOR: #7d754f; TEXT-ALIGN: center; PADDING-TOP: 5px; CLEAR: both; MARGIN: 10px auto
+}
+#footer .foot-nav {
+	HEIGHT: 20px; MARGIN: 0px auto; DISPLAY: block
+}
+#footer .foot-nav A {
+	MARGIN: 0px 7px
+}
+#footer .ali-group {
+	MARGIN: 5px auto
+}
+#footer .ali-group A {
+	MARGIN: 0px 1px
+}
+#footer .copyright {
+	CLEAR: both; MARGIN: 15px auto 0px
+}
+#server-num {
+	FONT-SIZE: 11px; COLOR: #fff
+}
+#page {
+	WIDTH: 1280px; BACKGROUND: url(../images/hlogo.png) no-repeat; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#page3 {
+	WIDTH: 1280px; BACKGROUND: url(../images/hlogo.png) no-repeat; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+.login-box .msg P.error {
+	BORDER-TOP-COLOR: #ff8080; BACKGROUND: url(../images/stuff.png) #fff2f2 no-repeat -319px -449px; BORDER-LEFT-COLOR: #ff8080; PADDING-BOTTOM: 2px; BORDER-BOTTOM-COLOR: #ff8080; PADDING-TOP: 2px; PADDING-LEFT: 23px; BORDER-RIGHT-COLOR: #ff8080; LINE-HEIGHT: 18px; PADDING-RIGHT: 10px
+}
+.login-box .msg P {
+	WORD-WRAP: break-word; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; WHITE-SPACE: normal; BORDER-BOTTOM: #ccc 1px solid; FLOAT: none; BORDER-LEFT: #ccc 1px solid
+}
+BODY {
+	BACKGROUND-IMAGE: none
+}
+#header {
+	PADDING-TOP: 0px
+}
+#logo {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 50px; PADDING-LEFT: 950px; PADDING-RIGHT: 0px
+}
+.login {
+	POSITION: relative
+}
+.login-bg {
+	OVERFLOW: hidden; HEIGHT: 500px; WIDTH: 950px; POSITION: absolute; LEFT: 40px; TOP: 48px
+}
+.login-box {
+	WIDTH: 489px; POSITION: relative; PADDING-BOTTOM: 18px; PADDING-TOP: 48px; PADDING-LEFT: 655px; MIN-HEIGHT: 304px; Z-INDEX: 1; PADDING-RIGHT: 0px; _height: 304px
+}
+.login-box .hd {
+	HEIGHT: 54px; BACKGROUND: url(../images/lp_head.png) no-repeat
+}
+.login-box .hd LI {
+	HEIGHT: 36px; WIDTH: 163px; FLOAT: left; MARGIN-RIGHT: -1px
+}
+.login-box .hd H2 {
+	OVERFLOW: hidden; HEIGHT: 36px; BACKGROUND: url(../images/box_bg.png) no-repeat -400px 0px; DISPLAY: block; TEXT-INDENT: 45px
+}
+.login-box .hd A {
+	OVERFLOW: hidden; HEIGHT: 36px; BACKGROUND: url(../images/box_bg.png) no-repeat -400px 0px; DISPLAY: block; TEXT-INDENT: 45px
+}
+.login-box .hd H2 {
+	CURSOR: default; FONT-SIZE: 14px; POSITION: relative; COLOR: #000; Z-INDEX: 1; LINE-HEIGHT: 38px
+}
+.login-box .hd A {
+	FONT-SIZE: 12px; TEXT-DECORATION: none; BACKGROUND-POSITION: -10px 0px; FONT-WEIGHT: bold; COLOR: #999; LINE-HEIGHT: 36px
+}
+.login-box .hd A:hover {
+	BACKGROUND-POSITION: -200px 0px; COLOR: #000
+}
+.login-box .bd {
+	BACKGROUND: url(../images/lp_body.png) repeat-y; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 6px
+}
+.login-box .bd .taobao-box {
+	ZOOM: 1; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.login-box .bd .alipay-box {
+	ZOOM: 1; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.login-box .bd .alipay-box {
+	PADDING-BOTTOM: 20px
+}
+.login-box #J_Mobile {
+	MARGIN-BOTTOM: 10px
+}
+.login-box .field {
+	HEIGHT: 39px; ZOOM: 1; PADDING-TOP: 12px
+}
+.login-box .field LABEL {
+	FONT-SIZE: 16px; WIDTH: 66px; VERTICAL-ALIGN: middle; COLOR: #595959; TEXT-ALIGN: right; PADDING-LEFT: 45px; DISPLAY: inline-block; PADDING-RIGHT: 10px
+}
+.login-box .login-text {
+	BORDER-TOP: #c8c8c8 1px solid; HEIGHT: 39px; BORDER-RIGHT: #c8c8c8 1px solid; WIDTH: 293px; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #c8c8c8 1px solid; PADDING-LEFT: 5px; BORDER-LEFT: #c8c8c8 1px solid; LINE-HEIGHT: 39px; MARGIN-RIGHT: 3px
+}
+* + HTML .login-box .login-text {
+	MARGIN-LEFT: -2px
+}
+.login-box INPUT.tb-input-hint {
+	COLOR: silver
+}
+.login-box .password-edit {
+	OVERFLOW: hidden; HEIGHT: 28px; VERTICAL-ALIGN: middle; MARGIN-LEFT: -1px; DISPLAY: inline-block; _margin-left: -1px
+}
+#J_StandardPwd {
+	HEIGHT: 28px; VERTICAL-ALIGN: middle; DISPLAY: inline-block
+}
+.login-box .password-edit-tmp {
+	OVERFLOW: hidden; HEIGHT: 0px; WIDTH: 0px; DISPLAY: block
+}
+.J_CheckCode {
+	IME-MODE: disabled
+}
+.login-box .mobile-num {
+	BACKGROUND: url(../images/stuff.png) #fff no-repeat 164px -164px
+}
+.login-box .mobile-check {
+	WIDTH: 80px
+}
+.login-box .checkcode {
+	WIDTH: 100px
+}
+.login-box .only_img_code .checkcode {
+	WIDTH: 96px; MARGIN-RIGHT: 23px
+}
+.login-box .audio_code {
+	HEIGHT: 16px; WIDTH: 16px; VERTICAL-ALIGN: middle; ZOOM: 1; DISPLAY: inline-block
+}
+.login-box .field .warning-tip {
+	FONT-WEIGHT: 400; COLOR: #ff0a0a; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; PADDING-LEFT: 92px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+.login-box .highlight {
+	BORDER-TOP: #f63 1px solid; BORDER-RIGHT: #f63 1px solid; BORDER-BOTTOM: #f63 1px solid; BORDER-LEFT: #f63 1px solid
+}
+.login-box .code-tip {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 5px; PADDING-LEFT: 92px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+.login-box .change-code {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: middle; COLOR: #595959; MARGIN: 0px 0px 0px 23px; DISPLAY: inline-block; LINE-HEIGHT: 14px
+}
+.login-box .check-code-img {
+	BORDER-TOP: medium none; HEIGHT: 30px; BORDER-RIGHT: medium none; WIDTH: 100px; VERTICAL-ALIGN: middle; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN-RIGHT: 1px
+}
+.login-box .field .select-wrap {
+	BORDER-TOP: #c8c8c8 1px solid; HEIGHT: 24px; BORDER-RIGHT: #c8c8c8 1px solid; WIDTH: 180px; VERTICAL-ALIGN: middle; BACKGROUND: #fff; BORDER-BOTTOM: #c8c8c8 1px solid; POSITION: relative; BORDER-LEFT: #c8c8c8 1px solid; DISPLAY: inline-block
+}
+* + HTML .login-box .field .select-wrap {
+	MARGIN-LEFT: -2px
+}
+.login-box .field SELECT {
+	BORDER-TOP: 0px; HEIGHT: 20px; BORDER-RIGHT: 0px; WIDTH: 176px; BORDER-BOTTOM: 0px; POSITION: absolute; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; LEFT: 2px; BORDER-LEFT: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 20px; TOP: 2px
+}
+.login-box .tip {
+	COLOR: #808080
+}
+.login-box .submit {
+	OVERFLOW: hidden; HEIGHT: 52px; ZOOM: 1; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; PADDING-LEFT: 80px; CLEAR: both; PADDING-RIGHT: 0px
+}
+.login-box .submit-loading {
+	BACKGROUND: url(../images/loading.gif) no-repeat 100px 40px
+}
+.login-box .submit BUTTON {
+	OVERFLOW: hidden; CURSOR: pointer; FONT-SIZE: 0px; BORDER-TOP: 0px; HEIGHT: 53px; BORDER-RIGHT: 0px; WIDTH: 135px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/login.png) no-repeat 0px 0px; BORDER-BOTTOM: 0px; ZOOM: 1; BORDER-LEFT: 0px; DISPLAY: inline-block; LINE-HEIGHT: 100px; MARGIN-RIGHT: 6px; TEXT-INDENT: -9999px
+}
+.login-box .submit BUTTON:hover {
+	BACKGROUND-POSITION: -136px 0px
+}
+.login-submit BUTTON.hover {
+	BACKGROUND-POSITION: -136px 0px
+}
+.login-box .submit-loading BUTTON {
+	BACKGROUND-POSITION: -270px 0px
+}
+.login-box .safe {
+	HEIGHT: 56px
+}
+.login-box .safe {
+	OVERFLOW: hidden; PADDING-BOTTOM: 0px; PADDING-TOP: 24px; PADDING-LEFT: 120px; PADDING-RIGHT: 0px
+}
+.login-box .submit {
+	OVERFLOW: hidden; PADDING-BOTTOM: 0px; PADDING-TOP: 24px; PADDING-LEFT: 120px; PADDING-RIGHT: 0px
+}
+.login-box .safe INPUT {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px
+}
+.login-box .safe LABEL {
+	VERTICAL-ALIGN: middle; COLOR: #aaa
+}
+.login-box UL.entries {
+	HEIGHT: 38px; BACKGROUND: url(../images/lp_line.png) no-repeat 50% top; PADDING-TOP: 8px; PADDING-LEFT: 48px; MARGIN: 10px 20px 0px 24px
+}
+.login-box UL.entries LI {
+	WORD-BREAK: keep-all; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.login-box UL.entries .dynamic-pwd {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 45px; PADDING-RIGHT: 0px
+}
+.login-box UL.entries .static-pwd {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 45px; PADDING-RIGHT: 0px
+}
+.login-box UL.entries .dynamic-pwd {
+	
+}
+.login-box UL.entries .static-pwd {
+	BACKGROUND-POSITION: -321px -165px
+}
+.login-box UL.entries A {
+	COLOR: #808080
+}
+.login-box UL.entries A:hover {
+	COLOR: #f60
+}
+.login-box .forget-pw {
+	FONT-SIZE: 14px; COLOR: #595959; LINE-HEIGHT: 26px
+}
+.login-box .forget-pw:hover {
+	COLOR: #f60
+}
+.login-box .ft {
+	FONT-SIZE: 0px; HEIGHT: 12px; BACKGROUND: url(../images/lp_foot.png) no-repeat 50% bottom
+}
+.login-box .msg {
+	OVERFLOW: hidden; WIDTH: 293px; MARGIN-LEFT: 124px
+}
+.login-box .msg P {
+	WORD-WRAP: break-word; WHITE-SPACE: normal; FLOAT: none
+}
+.login-box .msg P.error {
+	BACKGROUND-IMAGE: url(../images/stuff.png); BACKGROUND-POSITION: -319px -449px
+}
+.login-box .msg P.dynamic {
+	BORDER-TOP: #ffcc7f 1px solid; BORDER-RIGHT: #ffcc7f 1px solid; BACKGROUND: url(../images/sending.gif) #ffffe5 no-repeat 8px 4px; BORDER-BOTTOM: #ffcc7f 1px solid; COLOR: #404040; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 30px; BORDER-LEFT: #ffcc7f 1px solid; LINE-HEIGHT: 18px; PADDING-RIGHT: 10px
+}
+.login-help {
+	BACKGROUND: url(../images/arrow_box_bg.png) no-repeat
+}
+.login-help .hd {
+	BACKGROUND: url(../images/arrow_box_bg.png) no-repeat
+}
+.login-help .bd {
+	BACKGROUND: url(../images/arrow_box_bg.png) no-repeat
+}
+.login-help .ft {
+	BACKGROUND: url(../images/arrow_box_bg.png) no-repeat
+}
+.login-help {
+	WIDTH: 455px; BACKGROUND-REPEAT: repeat-y; POSITION: absolute; BACKGROUND-POSITION: -540px 0px; LEFT: 65px; Z-INDEX: 2
+}
+.login-help .hd {
+	HEIGHT: 12px; BACKGROUND-POSITION: -50px 0px; PADDING-TOP: 11px; LINE-HEIGHT: 20px
+}
+.login-help .hd H2 {
+	FONT-SIZE: 14px; BACKGROUND: url(../images/stuff.png) no-repeat -308px -385px; TEXT-INDENT: 35px
+}
+.login-help .bd {
+	BACKGROUND-POSITION: 428px 40%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 14px; PADDING-RIGHT: 36px
+}
+.login-help .bd DT {
+	BACKGROUND: url(../images/stuff.png) no-repeat -318px -415px; FONT-WEIGHT: bold; PADDING-LEFT: 20px; MARGIN-TOP: 12px; LINE-HEIGHT: 22px
+}
+.login-help .bd DD {
+	PADDING-LEFT: 20px; LINE-HEIGHT: 20px
+}
+.login-help .ft {
+	HEIGHT: 12px; BACKGROUND-POSITION: -1020px bottom
+}
+.install-plugin-popup {
+	BORDER-TOP: #bcbcbc 1px solid; BORDER-RIGHT: #bcbcbc 1px solid; WIDTH: 341px; BACKGROUND: #efefef; BORDER-BOTTOM: #bcbcbc 1px solid; POSITION: absolute; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN-LEFT: -170px; LEFT: 50%; BORDER-LEFT: #bcbcbc 1px solid; Z-INDEX: 100003; TOP: 160px; PADDING-RIGHT: 3px
+}
+.install-plugin-popup .wrap {
+	BORDER-TOP: #dedede 1px solid; BORDER-RIGHT: #dedede 1px solid; BACKGROUND: #fff; BORDER-BOTTOM: #dedede 1px solid; BORDER-LEFT: #dedede 1px solid
+}
+.install-plugin-popup .hd {
+	HEIGHT: 32px; BACKGROUND: url(../images/stuff.png) no-repeat 0px 0px; PADDING-LEFT: 20px
+}
+.install-plugin-popup H3 {
+	FONT-SIZE: 14px; HEIGHT: 32px; COLOR: #fff; LINE-HEIGHT: 32px
+}
+.install-plugin-popup .close {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 15px; WIDTH: 15px; RIGHT: 14px; POSITION: absolute; LINE-HEIGHT: 100px; TOP: 12px
+}
+.install-plugin-popup .bd {
+	PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px
+}
+.install-plugin-popup .bd H4 {
+	FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.install-plugin-popup .bd UL {
+	COLOR: #636363; MARGIN: 5px 0px 8px
+}
+.install-plugin-popup .bd UL LI {
+	BACKGROUND: url(../images/stuff.png) no-repeat 0px -40px; PADDING-LEFT: 8px; LINE-HEIGHT: 20px
+}
+.install-plugin-popup .bd STRONG {
+	FONT-SIZE: 12px; BACKGROUND: url(../images/stuff.png) no-repeat -326px -62px; COLOR: #f60; PADDING-LEFT: 15px; DISPLAY: block
+}
+.install-plugin-popup .bd .buttons {
+	TEXT-ALIGN: center; MARGIN: 18px 0px 2px
+}
+.popup-mask {
+	HEIGHT: 100%; WIDTH: 100%; BACKGROUND: #000; POSITION: absolute; LEFT: 0px; FILTER: alpha(opacity=50); Z-INDEX: 100002; TOP: 0px; opacity: .5
+}
+* HTML .popup-shim {
+	BORDER-TOP: 0px; HEIGHT: 100%; BORDER-RIGHT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; POSITION: absolute; LEFT: 0px; FILTER: alpha(opacity=0); BORDER-LEFT: 0px; Z-INDEX: 100001; TOP: 0px
+}
+.beta-tip {
+	MARGIN-BOTTOM: 20px; TEXT-ALIGN: center
+}
+.long-login-hover {
+	BACKGROUND: url(../images/sprit2.png) no-repeat 0px 0px
+}
+.safe-login-hover {
+	BACKGROUND: url(../images/sprit2.png) no-repeat 0px 0px
+}
+.long-login-help {
+	OVERFLOW: hidden; FONT-SIZE: 0px; HEIGHT: 12px; WIDTH: 12px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/stuff.png) no-repeat -325px -367px; ZOOM: 1; DISPLAY: inline-block; TEXT-INDENT: -1000px
+}
+.long-login {
+	OVERFLOW: hidden; HEIGHT: 22px; VERTICAL-ALIGN: middle; POSITION: relative; ZOOM: 1; COLOR: #999; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 3px; Z-INDEX: 5; DISPLAY: inline-block; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px
+}
+.safe-login {
+	OVERFLOW: hidden; HEIGHT: 22px; VERTICAL-ALIGN: middle; POSITION: relative; ZOOM: 1; COLOR: #999; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 3px; Z-INDEX: 5; DISPLAY: inline-block; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px
+}
+.long-login {
+	DISPLAY: none
+}
+.long-login-help {
+	DISPLAY: none
+}
+.long-login-hover {
+	BACKGROUND-POSITION: 0px 2px
+}
+.safe-login-hover {
+	BACKGROUND-POSITION: 0px 2px
+}
+.login-tips {
+	OVERFLOW: visible; WORD-WRAP: break-word; BORDER-TOP: #ccc 1px solid; HEIGHT: 27px; BORDER-RIGHT: #ccc 1px solid; WIDTH: 195px; BORDER-BOTTOM: #ccc 1px solid; POSITION: relative; BACKGROUND-POSITION: 0px -26px; COLOR: #ca3e12; PADDING-BOTTOM: 2px; PADDING-TOP: 0px; PADDING-LEFT: 5px; CLEAR: both; BORDER-LEFT: #ccc 1px solid; MARGIN-TOP: -1px; DISPLAY: none; LINE-HEIGHT: 14px; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #fff; _height: 31px; _width: 205px; _margin-top: 0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px
+}
+.login-box .safe INPUT {
+	MARGIN-RIGHT: 6px
+}
+.submit .long-login {
+	HEIGHT: 22px; WIDTH: 120px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px; PADDING-LEFT: 3px; MARGIN-LEFT: 80px; MARGIN-TOP: 4px; DISPLAY: block; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px
+}
+.submit .long-login INPUT {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.submit .login-tips {
+	POSITION: relative; Z-INDEX: 1; MARGIN-TOP: -1px
+}
+.submit .long-login-hover {
+	BACKGROUND-POSITION: 0px 0px
+}
+.dynamic-tips {
+	WIDTH: 276px; MARGIN: 12px 0px 8px 15px
+}
+.dynamic-tips .rc-tp {
+	OVERFLOW: hidden; HEIGHT: 1px; DISPLAY: block
+}
+.dynamic-tips .rc-bt {
+	OVERFLOW: hidden; HEIGHT: 1px; DISPLAY: block
+}
+.dynamic-tips .rc-tp S {
+	HEIGHT: 1px; WIDTH: 1px; DISPLAY: block; BACKGROUND-COLOR: #fafafa
+}
+.dynamic-tips .rc-bt S {
+	HEIGHT: 1px; WIDTH: 1px; DISPLAY: block; BACKGROUND-COLOR: #fafafa
+}
+.dynamic-tips .rc-tp .r {
+	FLOAT: right
+}
+.dynamic-tips .rc-bt .r {
+	FLOAT: right
+}
+.dynamic-tips .rc-tp .l {
+	FLOAT: left
+}
+.dynamic-tips .rc-bt .l {
+	FLOAT: left
+}
+.dynamic {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.dynamic-tips {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.dynamic-tips .tips {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.dynamic-tips .tips {
+	BORDER-TOP: #ececec 1px solid; BORDER-RIGHT: #ececec 1px solid; BORDER-BOTTOM: #ececec 1px solid; COLOR: #808080; PADDING-BOTTOM: 6px; PADDING-TOP: 6px; PADDING-LEFT: 10px; MARGIN: -1px 0px; BORDER-LEFT: #ececec 1px solid; PADDING-RIGHT: 10px; BACKGROUND-COLOR: #fff
+}
+.dynamic-tips EM {
+	COLOR: #f60
+}
+.dynamic-tips .left-text {
+	WIDTH: 82px; FLOAT: left; PADDING-TOP: 5px
+}
+.dynamic-tips .right-text {
+	WIDTH: 158px; FLOAT: left; PADDING-LEFT: 10px; LINE-HEIGHT: 16px
+}
+.dynamic-tips .right-text EM {
+	PADDING-LEFT: 6px
+}
+.login-box .dynamic .login-text {
+	WIDTH: 80px; MARGIN-RIGHT: 3px
+}
+.login-box .dynamic .mobile-num {
+	WIDTH: 174px
+}
+.login-box .dynamic .field LABEL {
+	WIDTH: 72px
+}
+.login-box .dynamic .submit {
+	PADDING-LEFT: 184px; MARGIN-TOP: -36px
+}
+.login-box .dynamic .submit-loading {
+	BACKGROUND: url(../images/loading.gif) no-repeat 282px 18px
+}
+.login-box .dynamic UL.entries {
+	PADDING-LEFT: 54px
+}
+.login-box .dynamic .field INPUT {
+	POSITION: relative
+}
+.login-visitor {
+	HEIGHT: 46px; BACKGROUND: url(../images/visitor_bg.png) no-repeat; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.login-visitor .visitor {
+	TEXT-ALIGN: center; DISPLAY: block
+}
+A.feedback {
+	BACKGROUND: url(../images/sprit2.png) no-repeat 0px -26px; PADDING-LEFT: 18px
+}
+.ph-label {
+	HEIGHT: 24px; POSITION: absolute; COLOR: #999; PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 6px; LINE-HEIGHT: 24px; PADDING-RIGHT: 0px; opacity: 1; _padding-top: 0; transition: all .2s ease-out; -webkit-transition: all .2s ease-in; -moz-transition: all .2s ease-out
+}
+.ph-hide .ph-label {
+	VISIBILITY: hidden; opacity: 0
+}
+.ph-focus .ph-label {
+	COLOR: #ddd
+}
+.module-dynamic .static {
+	DISPLAY: none
+}
+.module-dynamic .quick-login {
+	DISPLAY: none
+}
+.module-static .quick-login {
+	DISPLAY: none
+}
+.module-static .dynamic {
+	DISPLAY: none
+}
+.module-quick .static {
+	DISPLAY: none
+}
+.module-quick .dynamic {
+	DISPLAY: none
+}
+.no-longlogin .long-login {
+	VISIBILITY: hidden
+}
+.no-longlogin .long-login-help {
+	VISIBILITY: hidden
+}
+.no-longlogin .login-tips {
+	VISIBILITY: hidden
+}
+.no-safe .safe-login {
+	VISIBILITY: hidden
+}
+.no-reg .register {
+	VISIBILITY: hidden
+}
+.no-dynamic .entries .register {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.no-dynamic .dynamic-pwd {
+	DISPLAY: none
+}
+.hidden {
+	DISPLAY: none
+}
+.ql-box {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.ql-single .r-user {
+	DISPLAY: none
+}
+.ql-box .userlist .current {
+	FONT-WEIGHT: bold
+}
+.ql-box .userlist LI {
+	HEIGHT: 2em
+}
+.ql-box .title {
+	PADDING-LEFT: 80px
+}
+.ql-box .userlist {
+	OVERFLOW: auto; HEIGHT: 6em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 80px; MARGIN: 10px 0px 0px; PADDING-RIGHT: 0px
+}
+#dbgrid {
+	WORD-WRAP: break-word; BORDER-TOP: #c4cfd8 1px solid; BORDER-RIGHT: #c4cfd8 1px solid; BORDER-BOTTOM: #c4cfd8 1px solid; WORD-BREAK: break-all; COLOR: #484848; BORDER-LEFT: #c4cfd8 1px solid; MARGIN-TOP: 10px
+}
+#dbgrid TD {
+	PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px
+}
+.dbgrid_header {
+	HEIGHT: 30px
+}
+.lvtCol {
+	BACKGROUND: url(../images/level2Bg.gif) #ffffff repeat-x center bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 5px
+}
+.lvtColData {
+	HEIGHT: 26px
+}
+.lvtColData_col1 {
+	
+}
+.lvtColDataHover {
+	HEIGHT: 26px; BACKGROUND-COLOR: #ffffcc
+}
+.lvt {
+	BORDER-TOP: #c4cfd8 1px solid; BORDER-RIGHT: #c4cfd8 1px solid; BORDER-BOTTOM: #c4cfd8 1px solid; BORDER-LEFT: #c4cfd8 1px solid
+}
+.chl-reg {
+	BACKGROUND: url(../images/hbg.png) #f3f0eb repeat-x
+}

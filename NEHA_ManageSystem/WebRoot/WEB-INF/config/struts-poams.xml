@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts2配置文件，用于Action等配置 -->
+<struts>
+	<package name="ajaxDone" namespace="/ajax" extends="json-default">
+		<action name="ajaxDoneSuccess" class="ajaxDoneAction" method="ajaxDoneSuccess">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="ajaxDoneError" class="ajaxDoneAction" method="ajaxDoneError">
+			<result name="error" type="json"></result>
+		</action>
+	</package>
+	
+	<!-- ****************************************line********************************************************** -->
+		
+	<package name="login" namespace="/login" extends="struts-default">
+		<result-types>
+			<result-type name="streamx" class="hhm.neha.framework.struts2.StreamXResult"/>
+		</result-types>
+		<action name="index" class="loginAction" method="index">
+			<result name="ajaxIndex">/WEB-INF/jsp/login/ajaxIndex.jsp</result>
+			<result name="success">/WEB-INF/jsp/login/index.jsp</result>
+			<result name="pass" type="redirectAction">
+				<param name="actionName">main</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="vcode" class="verificationCodeAction">
+			<result type="streamx">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">inputStream</param>
+				<param name="buffersize">4096</param>
+			</result>
+		</action>
+		<action name="pass" class="loginAction" method="pass">
+			<result name="fail" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="namespace">/login</param>
+			</result>
+			<result name="success" type="redirectAction">
+				<param name="actionName">main</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="ajaxSuccess">/WEB-INF/jsp/login/ajaxLogin.jsp</result>
+			<result name="ajaxFail">/WEB-INF/jsp/login/ajaxLogin.jsp</result>
+		</action>
+		<action name="logout" class="loginAction" method="logout">
+			<result name="success" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="namespace">/login</param>
+			</result>
+		</action>
+		<action name="timeout" class="loginAction" method="timeout">
+			<result>/WEB-INF/jsp/login/ajaxTimeout.jsp</result>
+		</action>
+	</package>
+	
+	<!-- ****************************************line********************************************************** -->
+	
+	<package name="main" namespace="/" extends="indexdefault">
+		<action name="main" class="mainAction" method="index">
+			<result name="success">/WEB-INF/jsp/main/index.jsp</result>
+		</action>
+	</package>
+	
+	<!-- ****************************************line********************************************************** -->
+	
+	<package name="npo_center_events" namespace="/npo/center/events/index" extends="operatedefault">
+		<action name="list" class="eventsListAction" method="list">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/list.jsp</result>
+		</action>
+		<action name="view" class="eventsListAction" method="view">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/view.jsp</result>
+		</action>
+		<action name="viewChildList" class="eventsListAction" method="list">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/viewChildList.jsp</result>
+		</action>
+		<action name="add" class="eventsListAction" method="add">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/add.jsp</result>
+		</action>
+		<action name="edit" class="eventsListAction" method="edit">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/edit.jsp</result>
+		</action>
+		<action name="save" class="eventsListAction" method="save"></action>
+		<action name="del" class="eventsListAction" method="del"></action>
+		<action name="advanceSearch" class="eventsListAction" method="advanceSearch">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/advanceSearch.jsp</result>
+		</action>
+		<action name="eventSuggest" class="eventsListAction" method="suggest">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/eventSuggest.jsp</result>
+		</action>
+		<action name="eventLookup" class="eventsListAction" method="lookup">
+			<result name="success">/WEB-INF/jsp/nop/center/events/index/eventLookup.jsp</result>
+		</action>
+	</package>
+	
+	<!-- ****************************************line********************************************************** -->
+	
+	<package name="npo_config_status" namespace="/npo/config/status" extends="operatedefault">
+		<action name="index" class="eventStatusAction" method="index">
+			<result name="success">/WEB-INF/jsp/nop/config/status/index.jsp</result>
+		</action>
+		<action name="statusSuggest" class="eventStatusAction" method="suggest">
+			<result name="success">/WEB-INF/jsp/nop/config/status/statusSuggest.jsp</result>
+		</action>
+	</package>
+	<package name="npo_config_category" namespace="/npo/config/category" extends="operatedefault">
+		<action name="index" class="categoryEventAction" method="index">
+			<result name="success">/WEB-INF/jsp/nop/config/category/index.jsp</result>
+		</action>
+		<action name="add" class="categoryEventAction" method="add">
+			<result name="success">/WEB-INF/jsp/nop/config/category/add.jsp</result>
+		</action>
+		<action name="edit" class="categoryEventAction" method="edit">
+			<result name="success">/WEB-INF/jsp/nop/config/category/edit.jsp</result>
+		</action>
+		<action name="del" class="categoryEventAction" method="del"></action>
+		<action name="save" class="categoryEventAction" method="save"></action>
+		<action name="advanceSearch" class="categoryEventAction" method="advanceSearch">
+			<result name="success">/WEB-INF/jsp/nop/config/category/advanceSearch.jsp</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-lazy-init="true" default-autowire="byName">
+
+	<!-- DAO -->
+	<bean id="categoryEventDao" class="hhm.neha.dao.impl.CategoryEventDaoImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventListDao" class="hhm.neha.dao.impl.EventListDaoImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventStatusDao" class="hhm.neha.dao.impl.EventStatusDaoImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+	
+	<!-- Service -->
+	<bean id="categoryEventService" class="hhm.neha.service.impl.CategoryEventServiceImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventListService" class="hhm.neha.service.impl.EventListServiceImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventStatusService" class="hhm.neha.service.impl.EventStatusServiceImpl" abstract="false" lazy-init="default" autowire="default"></bean>
+
+	<!-- Action -->
+	<bean id="ajaxDoneAction" class="hhm.neha.action.AjaxDoneAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="categoryEventAction" class="hhm.neha.action.npo.config.CategoryEventAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventsListAction" class="hhm.neha.action.npo.center.events.EventsListAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="eventStatusAction" class="hhm.neha.action.npo.config.EventStatusAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="loginAction" class="hhm.neha.action.login.LoginAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="mainAction" class="hhm.neha.action.main.MainAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	<bean id="verificationCodeAction" class="hhm.neha.action.login.VerificationCodeAction" scope="prototype" abstract="false" lazy-init="default" autowire="default"></bean>
+	
+</beans>
+

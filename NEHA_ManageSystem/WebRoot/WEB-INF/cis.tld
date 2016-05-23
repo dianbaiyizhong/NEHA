@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<description><![CDATA["To make it easier to access dynamic data;
+                    This Tags limited to use in the Apache Struts(2.X) framework;
+                    The Tags can be used with CIS project.
+                    visit http://www.qawaa.com to get more info "]]></description>
+	<display-name>"CIS Tags"</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>c</short-name>
+	<uri>/cis-tags</uri>
+	<tag>
+		<description><![CDATA[creat category checkbox label .]]></description>
+		<name>categorycheckbox</name>
+		<tag-class>hhm.neha.web.tag.CategoryCheckBoxTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description><![CDATA[checkbox name]]></description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[category list]]></description>
+			<name>list</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[checkbox values]]></description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[Whether to escape HTML]]></description>
+			<name>escape</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>false</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[get a sub String .]]></description>
+		<name>substring</name>
+		<tag-class>hhm.neha.web.tag.SubstringTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description><![CDATA[string max length to display]]></description>
+			<name>maxLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The string value to do]]></description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[replace excess string]]></description>
+			<name>replace</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description><![CDATA[Whether to escape HTML]]></description>
+			<name>escape</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>false</dynamic-attributes>
+	</tag>
+</taglib>

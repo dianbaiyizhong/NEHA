@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="NEHA_Server">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/action"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/dao"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/entity"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/service"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/struts-i18n"/>
+        <property name="context-root" value="NEHA_Server"/>
+        <property name="java-output-path" value="/NEHA_Server/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
